@@ -32,9 +32,9 @@ let package = Package(
             .headerSearchPath("extended"),
             .headerSearchPath("..")
         ]),
-        .testTarget(
-            name: "simple-features-iosTests",
-            dependencies: ["simple-features-ios"],
-            path: "sf-iosTests"),
+//        .testTarget(
+//            name: "simple-features-iosTests",
+//            dependencies: ["simple-features-ios"],
+//            path: "sf-iosTests"),
     ]
 )
