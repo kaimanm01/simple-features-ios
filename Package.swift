@@ -29,10 +29,12 @@ let package = Package(
             .headerSearchPath("util/centroid"),
             .headerSearchPath("util/filter"),
             .headerSearchPath("util/sweep"),
+            .headerSearchPath("extended"),
             .headerSearchPath("..")
         ]),
-//        .testTarget(
-//            name: "simple-features-iosTests",
-//            dependencies: ["simple-features-ios"]),
+        .testTarget(
+            name: "simple-features-iosTests",
+            dependencies: ["simple-features-ios"],
+            path: "sf-iosTests"),
     ]
 )
